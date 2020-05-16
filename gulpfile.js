@@ -72,4 +72,4 @@ gulp.task('watch', function() {
     gulp.watch('app/js/main.js', gulp.parallel('main-js'));
 });
 
-gulp.task('default', gulp.parallel('script', 'sass', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('style', 'script', 'main-js', 'sass', 'watch', 'browser-sync'))
